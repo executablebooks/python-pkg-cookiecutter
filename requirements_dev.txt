@@ -1,4 +1,4 @@
 cookiecutter~=1.6
 pytest>=3.6,<4
-pytest-cookies~=0.3
-pytest-runner~=5.2
+pytest-cookies==0.4.0
+pytest-runner==5.2

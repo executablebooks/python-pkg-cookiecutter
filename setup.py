@@ -6,10 +6,10 @@ with open("./README.md", "r") as handle:
     readme_text = handle.read()
 
 with open("./requirements_dev.txt", "r") as handle:
-    requirements_dev = [l.strip() for l in handle.read().splitlines() if l.strip()]
+    requirements_dev = [lv.strip() for lv in handle.read().splitlines() if lv.strip()]
 
 with open("./requirements_doc.txt", "r") as handle:
-    requirements_doc = [l.strip() for l in handle.read().splitlines() if l.strip()]
+    requirements_doc = [ld.strip() for ld in handle.read().splitlines() if ld.strip()]
 
 setup(
     name="python-pkg-cookiecutter",
