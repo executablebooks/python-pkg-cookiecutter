@@ -60,7 +60,7 @@ def test_bake_with_defaults(cookies: Cookies, data_regression):
         path = pathlib.Path(result._project_dir)
         all_files = [str(p.relative_to(path)) for p in path.glob("**/*")]
         all_files = [p for p in all_files if "__pycache__" not in p]
-        data_regression.check({"files": all_files})
+        data_regression.check({"files": sorted(all_files)})
 
 
 def test_year_compute_in_license_file(cookies: Cookies):
