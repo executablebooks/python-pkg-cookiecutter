@@ -16,6 +16,12 @@ files:
 - LICENSE
 - MANIFEST.in
 - README.md
+- docs
+- docs/Makefile
+- docs/_static
+- docs/_templates
+- docs/conf.py
+- docs/index.rst
 - python_package
 - python_package/__init__.py
 - readthedocs.yml

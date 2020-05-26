@@ -5,6 +5,16 @@
     "project_short_description": "One sentence aim of project.",
     "owner": "Chris Sewell",
     "email": "chrisj_sewell@hotmail.com",
-    "pypi_deploy": ["yes", "no"],
-    "_copy_without_render": []
+    "pypi_deploy": [
+        "yes",
+        "no"
+    ],
+    "html_theme": [
+        "alabaster",
+        "sphinx-rtd-theme",
+        "pydata-sphinx-theme",
+        "sphinx-book-theme"
+    ],
+    "_copy_without_render": [],
+    "_extensions": []
 }

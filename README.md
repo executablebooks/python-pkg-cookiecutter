@@ -7,6 +7,7 @@ A cookie cutter package for creating python packages with all the mod-cons:
 - pre-commit checks with flake8 (linting) and black (formatting)
 - pytest setup
 - github actions for pre-commit, pytest and (optional) PyPi deployment
+- sphinx docs builds
 - Circle CI for documentation testing
 - github issues templates
 
@@ -23,9 +24,9 @@ $ cookiecutter https://github.com/executablebooks/python-pkg-cookiecutter.git
 Enter created folder then run tests:
 
 ```
+$ pip install -e .[code_style,testing]
 $ flake8 .
 $ black .
-$ pip install -e .
 $ pytest
 ```
 

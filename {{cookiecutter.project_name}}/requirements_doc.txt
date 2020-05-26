@@ -1,0 +1,4 @@
+sphinx
+{% if cookiecutter.html_theme in ["sphinx-rtd-theme", "pydata-sphinx-theme", "sphinx-book-theme"] %}
+{{ cookiecutter.html_theme }}
+{% endif %}

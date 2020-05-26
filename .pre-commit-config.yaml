@@ -3,7 +3,7 @@
 
 exclude: >
     (?x)^(
-      \.vscode/settings\.json
+      \.vscode/settings\.json|
     )$
 
 repos:
@@ -22,7 +22,8 @@ repos:
     - id: flake8
       exclude: >
         (?x)^(
-           {{cookiecutter.project_name}}/tests/test_basic.py
+           {{cookiecutter.project_name}}/tests/test_basic.py|
+           {{cookiecutter.project_name}}/docs/conf.py
         )$
   - repo: https://github.com/psf/black
     rev: stable
@@ -30,5 +31,6 @@ repos:
     - id: black
       exclude: >
         (?x)^(
-          {{cookiecutter.project_name}}/tests/test_basic.py
+          {{cookiecutter.project_name}}/tests/test_basic.py|
+          {{cookiecutter.project_name}}/docs/conf.py
         )$

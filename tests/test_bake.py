@@ -3,6 +3,7 @@ import shlex
 import os
 import pathlib
 import subprocess
+import sys
 import datetime
 from cookiecutter.utils import rmtree
 from pytest_cookies.plugin import Cookies, Result
@@ -49,7 +50,7 @@ def run_inside_dir(command, dirpath):
 def check_output_inside_dir(command, dirpath):
     "Run a command from inside a given directory, returning the command output"
     with inside_dir(dirpath):
-        return subprocess.check_output(shlex.split(command))
+        return subprocess.check_output(shlex.split(command)).decode(sys.stdout.encoding)
 
 
 def test_bake_with_defaults(cookies: Cookies, data_regression):
@@ -104,3 +105,12 @@ def test_using_pytest(cookies: Cookies):
         assert result.project.isdir()
         # Test the new pytest target
         run_inside_dir("python setup.py pytest", str(result.project)) == 0
+
+
+def test_docs_build(cookies: Cookies):
+    with bake_in_temp_dir(cookies) as result:
+        assert result.project.isdir()
+        output = check_output_inside_dir(
+            "make html-strict", str(result.project / "docs")
+        )
+        assert "build succeeded" in output
