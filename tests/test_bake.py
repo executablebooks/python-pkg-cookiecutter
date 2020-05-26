@@ -5,7 +5,7 @@ import pathlib
 import subprocess
 import datetime
 from cookiecutter.utils import rmtree
-from pytest_cookies import Cookies, Result
+from pytest_cookies.plugin import Cookies, Result
 
 
 @contextmanager

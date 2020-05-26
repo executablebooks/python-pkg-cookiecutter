@@ -12,13 +12,13 @@ with open("./README.md", "r") as handle:
     readme_text = handle.read()
 
 with open("./requirements.txt", "r") as handle:
-    requirements = [l.strip() for l in handle.read().splitlines() if l.strip()]
+    requirements = [lr.strip() for lr in handle.read().splitlines() if lr.strip()]
 
 with open("./requirements_dev.txt", "r") as handle:
-    requirements_dev = [l.strip() for l in handle.read().splitlines() if l.strip()]
+    requirements_dev = [lv.strip() for lv in handle.read().splitlines() if lv.strip()]
 
 with open("./requirements_doc.txt", "r") as handle:
-    requirements_doc = [l.strip() for l in handle.read().splitlines() if l.strip()]
+    requirements_doc = [ld.strip() for ld in handle.read().splitlines() if ld.strip()]
 
 setup(
     name="python-package",
@@ -28,7 +28,10 @@ setup(
     long_description_content_type="text/markdown",
     author="Chris Sewell",
     author_email="chrisj_sewell@hotmail.com",
-    url="https://github.com/executablebooks/python-package",
+    url=(
+        "https://github.com/"
+        "executablebooks/python-package"
+    ),
     license="MIT",
     packages=find_packages(),
     install_requires=requirements,
