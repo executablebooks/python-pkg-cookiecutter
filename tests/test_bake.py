@@ -54,9 +54,9 @@ def check_output_inside_dir(command, dirpath):
 
 def test_bake_with_defaults(cookies: Cookies, data_regression):
     with bake_in_temp_dir(cookies) as result:
+        assert result.exception is None, result.exception
+        assert result.exit_code == 0, result.exception
         assert result.project.isdir()
-        assert result.exit_code == 0
-        assert result.exception is None
         path = pathlib.Path(result._project_dir)
         all_files = [str(p.relative_to(path)) for p in path.glob("**/*")]
         all_files = [p for p in all_files if "__pycache__" not in p]

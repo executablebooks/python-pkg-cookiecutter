@@ -43,6 +43,7 @@ jobs:
       run: |
         pytest
 
+  {% if cookiecutter.pypi_deploy %}
   publish:
 
     name: Publish to PyPi
@@ -65,3 +66,4 @@ jobs:
         with:
           user: __token__
           password: "{{ '${{ secrets.PYPI_KEY }}' }}"
+  {% endif %}

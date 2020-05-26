@@ -13,6 +13,10 @@ repos:
     hooks:
     - id: check-json
     - id: check-yaml
+      exclude: >
+        (?x)^(
+          {{cookiecutter.project_name}}/.github/workflows/ci.yml
+        )$
     - id: end-of-file-fixer
     - id: trailing-whitespace
     - id: flake8
