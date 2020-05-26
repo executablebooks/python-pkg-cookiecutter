@@ -20,7 +20,10 @@ repos:
     - id: end-of-file-fixer
     - id: trailing-whitespace
     - id: flake8
-
+      exclude: >
+        (?x)^(
+           {{cookiecutter.project_name}}/tests/test_basic.py
+        )$
   - repo: https://github.com/psf/black
     rev: stable
     hooks:
