@@ -1,0 +1,6 @@
+[flake8]
+max-line-length = 88
+# these clash with black
+ignore = E203,W503
+# contain jinja templating
+exclude = {{cookiecutter.project_name}}/tests/test_basic.py

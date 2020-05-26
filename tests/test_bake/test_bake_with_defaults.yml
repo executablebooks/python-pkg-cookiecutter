@@ -1,0 +1,27 @@
+files:
+- .circleci
+- .flake8
+- .github
+- .gitignore
+- .pre-commit-config.yaml
+- .vscode
+- LICENSE
+- MANIFEST.in
+- python_package
+- README.md
+- readthedocs.yml
+- requirements.txt
+- requirements_dev.txt
+- requirements_doc.txt
+- setup.py
+- tests
+- .circleci/config.yml
+- .github/ISSUE_TEMPLATES
+- .github/workflows
+- .github/ISSUE_TEMPLATES/bug_report.md
+- .github/ISSUE_TEMPLATES/documentation-improvements.md
+- .github/ISSUE_TEMPLATES/feature_request.md
+- .github/workflows/ci.yml
+- .vscode/settings.json
+- python_package/__init__.py
+- tests/test_basic.py
