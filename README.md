@@ -11,3 +11,6 @@ A cookie cutter package for creating python packages with all the mod-cons:
 ## Notes
 
 PyPi deployment requires a PyPI API key to be added to the GitHub repo's secrets (named `PYPI_KEY`)
+
+[black-badge]: https://img.shields.io/badge/code%20style-black-000000.svg
+[black-link]: https://github.com/ambv/black
