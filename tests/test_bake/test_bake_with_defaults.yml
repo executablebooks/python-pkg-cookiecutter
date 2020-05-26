@@ -19,7 +19,7 @@ files:
 - docs
 - docs/Makefile
 - docs/_static
-- docs/_templates
+- docs/_static/custom.css
 - docs/conf.py
 - docs/index.rst
 - python_package
