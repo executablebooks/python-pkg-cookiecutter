@@ -126,3 +126,4 @@ dmypy.json
 
 # ignore VSCode settings
 .vscode/
+!{{cookiecutter.project_name}}/.vscode
