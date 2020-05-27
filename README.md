@@ -2,12 +2,12 @@
 
 [![Code style: black][black-badge]][black-link]
 
-A cookie cutter package for creating python packages with all the mod-cons:
+A cookiecutter for creating python packages with all the mod-cons:
 
 - pre-commit checks with flake8 (linting) and black (formatting)
 - pytest setup
 - github actions for pre-commit, pytest and (optional) PyPi deployment
-- sphinx docs builds
+- Sphinx docs builds
 - Circle CI for documentation testing
 - github issues templates
 
