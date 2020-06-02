@@ -15,7 +15,7 @@ import sys
 
 # Add package to the path so it can be imported without installing it
 sys.path.append(os.path.join(os.path.split(__file__)[0], os.pardir))
-from {{ cookiecutter.package_name }} import __version__
+from {{ cookiecutter.package_name }} import __version__  # noqa: E402
 
 # -- Project information -----------------------------------------------------
 
