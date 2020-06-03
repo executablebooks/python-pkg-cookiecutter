@@ -9,5 +9,7 @@
         "**/__pycache__": true,
         "**/.pytest_cache": true
     },
-    "python.formatting.provider": "black"
+    "python.formatting.provider": "black",
+    "python.linting.pylintEnabled": false,
+    "python.linting.flake8Enabled": true
 }
